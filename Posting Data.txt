@@ -19,7 +19,7 @@ public class Main {
 //        Class.forName("com.mysql.cj.jdbc.Driver");
         Connection connection = DriverManager.getConnection(url,username,password);
         Statement st = connection.createStatement();
-        String query = "delete  from users where id=1";
+        String query = "insert into users values('1','akhil','akhii')";
         st.execute(query);
         connection.close();
 
